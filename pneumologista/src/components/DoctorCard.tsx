@@ -31,7 +31,7 @@ const DoctorCard: FunctionComponent<DoctorProps> = (props: DoctorProps) => {
   }
   
   return (
-    <div className="flex antialiased border-1 rounded-md border-solid border-slate-50 p-7 max-w-xs mb-2 pr-5">
+    <div className="flex antialiased border-1 rounded-md border-solid border-slate-50 p-7 max-w-xs mb-2 px-auto mx-auto">
       <div>
       <h2 className="col-start-2 ml-2">{name}</h2>
       <div>
@@ -40,7 +40,7 @@ const DoctorCard: FunctionComponent<DoctorProps> = (props: DoctorProps) => {
       
       <div className=" flex flex-col">
       
-      <div className='flex flex-row items-center ml-1 max-w-sm'>
+      <div className='flex flex-row items-center mx-auto max-w-sm'>
         <button className="text-sm mx-3 mt-3 mb-2 bg-slate-500 hover:cursor-pointer" onClick={()=>bioHandler()}>Bio</button>
         <button className="text-sm mx-3 mt-3 mb-2 bg-slate-500 hover:cursor-pointer" onClick={()=>cvHandler()}>CV</button>
         <button className="text-sm mx-3 mt-3 mb-2 bg-slate-500 hover:cursor-pointer" onClick={()=>callHandler()}>Call</button>
