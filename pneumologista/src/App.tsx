@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Homepage from './pages/Homepage';
 
@@ -7,7 +8,7 @@ function App() {
 
   return (
     <Router>
-      <div className="max-w-xs mx-auto top-0">
+      <div className="max-w-xs mx-auto top-0 md:ml-48 2xl:ml-96">
           <Header />
         <Routes>
           <Route path="/" element={<Homepage/>}/>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/myorders" element={<MyOrdersPage/>}/>
           <Route path="/admin" element={<AdminPage/>}/> */}
         </Routes>
+        <Footer/>
       </div>
     </Router>
   )

@@ -31,7 +31,7 @@ const DoctorCard: FunctionComponent<DoctorProps> = (props: DoctorProps) => {
   }
   
   return (
-    <div className="flex antialiased border-1 rounded-md border-solid border-slate-50 p-7 max-w-xs mb-2 px-auto mx-auto">
+    <div className="bg-slate-800 flex antialiased border-1 rounded-md border-solid border-slate-50 p-7 max-w-xs mb-2 px-auto mx-auto">
       <div>
       <h2 className="col-start-2 ml-2">{name}</h2>
       <div>

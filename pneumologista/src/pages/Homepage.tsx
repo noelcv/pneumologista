@@ -15,10 +15,13 @@ const Homepage: FunctionComponent = () => {
   
   
   return (
-      <div className="flex justify-between mx-auto flex-col sm:flex-row">
-          <DoctorCard name="Antonio Fernandes" image="/antonio.jpeg" bio={bioAntonio} cv={cvAntonio} callLink={callAntonio}/>
-
-          <DoctorCard name="Manuel Fernandes" image="/manuel.jpeg" bio={bioManuel} cv={cvManuel} callLink={callManuel}/>
+      <div className="flex justify-between mx-auto flex-col sm:flex-row md:grid md:grid-flow-col md:gap-32 xl:gap-96">
+          <div>
+            <DoctorCard name="Antonio Fernandes" image="/antonio.jpeg" bio={bioAntonio} cv={cvAntonio} callLink={callAntonio}/>
+          </div>
+          <div>
+            <DoctorCard name="Manuel Fernandes" image="/manuel.jpeg" bio={bioManuel} cv={cvManuel} callLink={callManuel}/>
+          </div>
       </div>
       
   ) 
